@@ -1,0 +1,40 @@
+site_name: Testcontainers-Dotnet
+plugins:
+    - search
+    - codeinclude
+    - markdownextradata
+theme:
+    name: 'material'
+    palette:
+        scheme: testcontainers
+    font:
+        text: Roboto
+        code: Roboto Mono
+    logo: 'logo.svg'
+    favicon: 'favicon.ico'
+extra_css:
+    - 'css/extra.css'
+repo_name: 'testcontainers-dotnet'
+repo_url: 'https://github.com/testcontainers/testcontainers-dotnet'
+markdown_extensions:
+    - admonition
+    - codehilite:
+          linenums: False
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.snippets
+nav:
+    - Home: index.md
+    # - Quickstart:
+    #       - quickstart/quickstart.md
+    - Examples:
+          - examples/postgres.md
+          - examples/nginx.md
+    # - Contributing:
+    #       - contributing.md
+    #       - contributing_docs.md
+    # - Getting help: getting_help.md
+edit_uri: edit/develop/docs/
+extra:
+    latest_version: 0.14.0
